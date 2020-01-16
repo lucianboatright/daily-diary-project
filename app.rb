@@ -3,7 +3,17 @@ require 'sinatra/base'
 class Diary < Sinatra::Base
 
   get '/' do
-    'HELLO'
+    erb :index
+  end
+
+  post '/submit' do
+    @title = params[:title]
+    @body = params[:body]
+    redirect '/confirm'
+  end
+
+  get '/confirm' do
+    erb :confirm
   end
 
 
