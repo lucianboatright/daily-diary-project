@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class Diary < Sinatra::Base
+class DiaryManager < Sinatra::Base
 
   get '/' do
     erb :index

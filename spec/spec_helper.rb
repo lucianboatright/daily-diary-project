@@ -19,7 +19,7 @@ require 'simplecov-console'
 # require 'diary_db'
 
 # Tell capbara to talk to BookmarkManager
-Capybara.app = Diary
+Capybara.app = DiaryManager
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
